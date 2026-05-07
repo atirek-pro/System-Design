@@ -7,10 +7,10 @@ The purpose of this project is to demonstrate object-oriented design principles 
 
 The system supports:
 
-* Adding text elements
-* Adding image elements
-* Rendering the document
-* Saving the document using different persistence mechanisms
+- Adding text elements
+- Adding image elements
+- Rendering the document
+- Saving the document using different persistence mechanisms
 
 This design is intended as a **learning project for system design and OOP concepts**.
 
@@ -36,7 +36,7 @@ DocumentElement (Abstract)
      |
      ├── TextElement
      └── ImageElement
-     
+
 Persistence (Abstract)
      |
      ├── SaveToFile
@@ -53,8 +53,8 @@ This is the base class for all elements that can exist inside a document.
 
 ### Responsibilities
 
-* Defines a common interface for document elements.
-* Ensures all elements implement the `render()` method.
+- Defines a common interface for document elements.
+- Ensures all elements implement the `render()` method.
 
 ### Methods
 
@@ -64,8 +64,8 @@ render()
 
 ### Implementations
 
-* `TextElement`
-* `ImageElement`
+- `TextElement`
+- `ImageElement`
 
 ---
 
@@ -120,8 +120,8 @@ render()
 
 ### Responsibilities
 
-* Maintains a list of document elements.
-* Handles rendering of the entire document by iterating through elements.
+- Maintains a list of document elements.
+- Handles rendering of the entire document by iterating through elements.
 
 ---
 
@@ -171,9 +171,9 @@ save()
 
 ### Responsibilities
 
-* Adds content to the document
-* Triggers rendering
-* Saves the document using the configured persistence method
+- Adds content to the document
+- Triggers rendering
+- Saves the document using the configured persistence method
 
 ---
 
@@ -203,11 +203,19 @@ ChartElement
 
 The design separates:
 
-* Document structure
-* Rendering logic
-* Persistence logic
+- Document structure
+- Rendering logic
+- Persistence logic
 
 ---
+
+# SOLID PRINCIPLES FOLLOWED
+
+1. Single Responsibility Principle(SRP) [X]
+2. Open Close Principle(OCP) [X]
+3. Liskov Substitution Principle(LSP) [X]
+4. Interface Segregation Principle(ISP) [X]
+5. Dependency Inversion Principle(DIP) [X]
 
 # Design Patterns Used
 
@@ -243,7 +251,7 @@ Persistence p = new SaveToDB()
 
 The following diagram illustrates the system design.
 
-![Document Editor UML](./diagram.png)
+![Document Editor UML](./LLD/DocumentEditor/Document Editor LLD.png)
 
 ---
 
@@ -271,13 +279,13 @@ editor.save()
 
 This design can be extended with additional features:
 
-* Undo / Redo functionality
-* Rich text formatting
-* Table support
-* Video or embedded media
-* Collaborative editing
-* Version control
-* Cursor and selection management
+- Undo / Redo functionality
+- Rich text formatting
+- Table support
+- Video or embedded media
+- Collaborative editing
+- Version control
+- Cursor and selection management
 
 ---
 
@@ -285,10 +293,10 @@ This design can be extended with additional features:
 
 This project is meant to practice:
 
-* Object Oriented Design
-* Low Level System Design
-* UML Modeling
-* Design Patterns
+- Object Oriented Design
+- Low Level System Design
+- UML Modeling
+- Design Patterns
 
 It is not a full production editor but a **learning exercise for software architecture.**
 
