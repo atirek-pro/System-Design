@@ -211,11 +211,11 @@ The design separates:
 
 # SOLID PRINCIPLES FOLLOWED
 
-1. Single Responsibility Principle(SRP) [X]
-2. Open Close Principle(OCP) [X]
-3. Liskov Substitution Principle(LSP) [X]
-4. Interface Segregation Principle(ISP) [X]
-5. Dependency Inversion Principle(DIP) [X]
+- [x] Single Responsibility Principle (SRP)
+- [x] Open Close Principle (OCP)
+- [x] Liskov Substitution Principle (LSP)
+- [x] Interface Segregation Principle (ISP)
+- [x] Dependency Inversion Principle (DIP)
 
 # Design Patterns Used
 
